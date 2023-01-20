@@ -1,0 +1,88 @@
+html {
+   background: #018ded url(https://unsplash.it/1500/1000?image=881&blur=8);
+   background-size: cover;
+   font-family: "helvetica neue";
+   text-align: center;
+   font-size: 10px;
+}
+
+body {
+   margin: 0;
+   font-size: 2rem;
+   display: flex;
+   flex: 1;
+   min-height: 100vh;
+   align-items: center;
+}
+
+.clock {
+   width: 30rem;
+   height: 30rem;
+   border: 20px solid rgb(218, 126, 6);
+   border-radius: 10%;
+   margin: 50px auto;
+   position: relative;
+   padding: 2rem;
+   box-shadow: 0 0 0 4px rgba(230, 165, 165, 0.1), inset 0 0 0 3px #efefef,
+      inset 0 0 10px rgb(214, 100, 100), 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   transform: translatex(-1px);
+}
+
+.hand {
+   width: 50%;
+   height: 3px;
+   background: rgb(235, 156, 156);
+   position: absolute;
+   top: 50%;
+   transform-origin: 100%;
+   transform: rotate(90deg);
+   transition: all 0.05s;
+   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.clock-caliberation3 {
+   position: absolute;
+   width: 100%;
+   height: -2px;
+   color: antiquewhite;
+   display: flex;
+   flex-direction: column;
+   margin-top: 7.5%;
+}
+
+#clock-caliberation1 {
+   position: absolute;
+   width: 100%;
+   height: 3rem;
+   color: white;
+   margin-top: -14.8%;
+   display: flex;
+   flex-direction: column;
+}
+.clock-caliberation4 {
+   position: absolute;
+   width: 100%;
+   height: -2px;
+   color: antiquewhite;
+   display: flex;
+   flex-direction: column;
+   margin-top: -3.2%;
+   margin-left: -11.5%;
+}
+.clock-caliberation2 {
+   position: absolute;
+   width: 100%;
+   height: -2px;
+   text-align: right;
+   color: antiquewhite;
+   display: flex;
+   flex-direction: column;
+   margin-left: -37.8%;
+   margin-top: -3%;
+}
